@@ -1,0 +1,6 @@
+,MSE%_mean,MSE%_std,Permutation_1,Permutation_2,Permutation_3,Permutation_4,Permutation_5,Permutation_6,Permutation_7,Permutation_8,Permutation_9,Permutation_10
+Alpha,22,3,18.89,25.56,24.33,19.39,20.46,25.99,,,,
+Particle_type,19,7,8.11,15.49,19.16,,,,18.37,24.12,28.47,
+Zeta_potential,15,5,7.38,,,8.92,9.22,,20.29,15.95,,16.83
+Mucus_source,13,7,,19.35,,0.42,,18.37,16.67,,16.87,20.46
+Dominant_mucin,10,8,,,16.93,,-0.41,16.86,,4.59,16.91,5.54

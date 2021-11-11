@@ -1,0 +1,288 @@
+
+Call:
+lm(formula = log10(Diffusion_constant) ~ log10(Diameter), data = SmallMucusT)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.50877 -0.14282  0.02118  0.29329  1.27715 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       3.5217     0.3816   9.228 2.31e-09 ***
+log10(Diameter)  -2.1466     0.3091  -6.944 3.52e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6738 on 24 degrees of freedom
+Multiple R-squared:  0.6677,	Adjusted R-squared:  0.6538 
+F-statistic: 48.21 on 1 and 24 DF,  p-value: 3.517e-07
+
+
+	Spearman's rank correlation rho
+
+data:  log10(SmallMucusT$Diameter) and log10(SmallMucusT$Diffusion_constant)
+S = 5667.3, p-value = 1.691e-12
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.9375281 
+
+
+	Pearson's product-moment correlation
+
+data:  log10(SmallMucusT$Diameter) and log10(SmallMucusT$Diffusion_constant)
+t = -6.9436, df = 24, p-value = 3.517e-07
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9148855 -0.6287502
+sample estimates:
+       cor 
+-0.8170995 
+
+
+Call:
+lm(formula = log10(Diffusion_constant) ~ Zeta, data = NegativeT)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0539 -0.7295  0.1145  0.7658  1.4135 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.55549    0.21581  -7.208 2.44e-08 ***
+Zeta         0.02433    0.00643   3.784 0.000599 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8966 on 34 degrees of freedom
+Multiple R-squared:  0.2963,	Adjusted R-squared:  0.2756 
+F-statistic: 14.32 on 1 and 34 DF,  p-value: 0.0005985
+
+
+	Spearman's rank correlation rho
+
+data:  NegativeT$Zeta and log10(NegativeT$Diffusion_constant)
+S = 3247.6, p-value = 0.0001963
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.5820343 
+
+
+	Pearson's product-moment correlation
+
+data:  NegativeT$Zeta and log10(NegativeT$Diffusion_constant)
+t = 3.7841, df = 34, p-value = 0.0005985
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.2628490 0.7404787
+sample estimates:
+      cor 
+0.5443751 
+
+
+Call:
+lm(formula = log10(Diffusion_constant) ~ Zeta, data = PositiveT)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.9669 -0.4663  0.3871  0.6232  1.1321 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -2.78905    0.38033  -7.333 5.95e-07 ***
+Zeta         0.01288    0.01707   0.755     0.46    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.001 on 19 degrees of freedom
+Multiple R-squared:  0.02909,	Adjusted R-squared:  -0.02201 
+F-statistic: 0.5693 on 1 and 19 DF,  p-value: 0.4598
+
+
+	Spearman's rank correlation rho
+
+data:  PositiveT$Zeta and log10(PositiveT$Diffusion_constant)
+S = 1047, p-value = 0.1571
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.3201347 
+
+
+	Pearson's product-moment correlation
+
+data:  PositiveT$Zeta and log10(PositiveT$Diffusion_constant)
+t = 0.75453, df = 19, p-value = 0.4598
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.2818762  0.5609490
+sample estimates:
+      cor 
+0.1705653 
+
+
+Call:
+lm(formula = log10(Diffusion_constant) ~ alpha, data = Core_Mucus)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.93247 -0.26040  0.05381  0.27787  0.99260 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -4.9974     0.2315  -21.58   <2e-16 ***
+alpha         5.2692     0.3097   17.01   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4717 on 37 degrees of freedom
+  (67 observations deleted due to missingness)
+Multiple R-squared:  0.8867,	Adjusted R-squared:  0.8836 
+F-statistic: 289.5 on 1 and 37 DF,  p-value: < 2.2e-16
+
+
+	Spearman's rank correlation rho
+
+data:  Core_Mucus$alpha and log10(Core_Mucus$Diffusion_constant)
+S = 679.68, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.9312062 
+
+
+	Pearson's product-moment correlation
+
+data:  Core_Mucus$alpha and log10(Core_Mucus$Diffusion_constant)
+t = 17.013, df = 37, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.8907502 0.9691960
+sample estimates:
+      cor 
+0.9416262 
+
+
+Call:
+lm(formula = alpha ~ log10(Diameter), data = SmallMucusT)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.18570 -0.02999  0.02542  0.03143  0.11797 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      1.11247    0.04217  26.380  < 2e-16 ***
+log10(Diameter) -0.13240    0.03416  -3.876 0.000721 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07446 on 24 degrees of freedom
+Multiple R-squared:  0.385,	Adjusted R-squared:  0.3593 
+F-statistic: 15.02 on 1 and 24 DF,  p-value: 0.0007205
+
+
+	Spearman's rank correlation rho
+
+data:  log10(SmallMucusT$Diameter) and SmallMucusT$alpha
+S = 4653.9, p-value = 0.001474
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+-0.591078 
+
+
+	Pearson's product-moment correlation
+
+data:  log10(SmallMucusT$Diameter) and SmallMucusT$alpha
+t = -3.8759, df = 24, p-value = 0.0007205
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.8125325 -0.3068606
+sample estimates:
+       cor 
+-0.6204625 
+
+
+Call:
+lm(formula = alpha ~ Zeta, data = NegativeT)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.36386 -0.11410  0.03234  0.14003  0.31650 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 0.677690   0.043555  15.559  < 2e-16 ***
+Zeta        0.004453   0.001298   3.431  0.00159 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.181 on 34 degrees of freedom
+Multiple R-squared:  0.2572,	Adjusted R-squared:  0.2354 
+F-statistic: 11.78 on 1 and 34 DF,  p-value: 0.001594
+
+
+	Spearman's rank correlation rho
+
+data:  NegativeT$Zeta and NegativeT$alpha
+S = 3576.4, p-value = 0.000681
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.5397114 
+
+
+	Pearson's product-moment correlation
+
+data:  NegativeT$Zeta and NegativeT$alpha
+t = 3.4315, df = 34, p-value = 0.001594
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.2143699 0.7163559
+sample estimates:
+      cor 
+0.5071855 
+
+
+Call:
+lm(formula = alpha ~ Zeta, data = PositiveT)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.32649 -0.08414  0.07722  0.11173  0.20393 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 0.436872   0.065275   6.693 2.13e-06 ***
+Zeta        0.002706   0.002931   0.923    0.367    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1718 on 19 degrees of freedom
+Multiple R-squared:  0.04295,	Adjusted R-squared:  -0.007417 
+F-statistic: 0.8527 on 1 and 19 DF,  p-value: 0.3674
+
+
+	Spearman's rank correlation rho
+
+data:  PositiveT$Zeta and PositiveT$alpha
+S = 1047, p-value = 0.1571
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.3201347 
+
+
+	Pearson's product-moment correlation
+
+data:  PositiveT$Zeta and PositiveT$alpha
+t = 0.92344, df = 19, p-value = 0.3674
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.2464873  0.5864688
+sample estimates:
+      cor 
+0.2072522 
+
